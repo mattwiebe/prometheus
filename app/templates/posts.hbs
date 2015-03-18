@@ -1,0 +1,7 @@
+{{#each post in model}}
+	<article>
+		<h2>{{{post.title}}}</h2>
+		<div class="entry-content">{{{post.content}}}</div>
+		<footer><img {{bind-attr src=post.author.avatarUrl}} /> {{post.author.name}}</footer>
+	</article>
+{{/each}}

@@ -1,3 +1,7 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<h2 id="title">Welcome to WP API</h2>
+
+{{#each post in posts}}
+	<h1>{{post.title}}</h1>
+{{/each}}
 
 {{outlet}}
